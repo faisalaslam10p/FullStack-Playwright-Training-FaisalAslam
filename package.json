@@ -1,0 +1,17 @@
+{
+  "name": "fullstackqa_playwright_advance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^22.5.4"
+  },
+  "dependencies": {
+    "fullstackqa_playwright_advance": "file:"
+  }
+}
