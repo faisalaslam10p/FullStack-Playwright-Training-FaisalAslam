@@ -40,7 +40,7 @@ exports.SignupPageClass = class SignupPageClass{
         await this.page.goto('https://www.demoblaze.com/index.html');
     }
 
-    async signuponwebsite(){
+    async signuponwebsite(user, pass){
         await this.ClickonSignupbuttontext.click();
         await this.Clickonsignupusername.click();
         await this.Clickonsignupusername.fill(randomUsername);
@@ -50,6 +50,11 @@ exports.SignupPageClass = class SignupPageClass{
         
         }
 
+    async generaterandomstring(){
+        const randomUsername = Math.random().toString(36).substring(2,7);
+        const randomPassword = Math.random().toString(36).substring(2,7);
+        return [randomUsername,randomPassword];
 
+    }    
 
 }

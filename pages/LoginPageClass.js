@@ -19,7 +19,7 @@ exports.loginPageClass = class loginPageClass{
 
         }
 
-        async Loginonwebsite(){
+        async Loginonwebsite(user,pass){
             await this.userlogin.click();
             await this.loginusername.click();
             await this.loginusername.fill(randomUsername);
